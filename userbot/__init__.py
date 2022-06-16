@@ -78,7 +78,7 @@ LOGS = getLogger(__name__)
 
 if version_info[0] < 3 or version_info[1] < 8:
     LOGS.info(
-        "Anda HARUS memiliki python setidaknya versi 3.8."
+        "Anda HARUS memiliki python setidaknya versi 3.9."
         "Beberapa fitur tergantung versi python ini. Bot berhenti."
     )
     sys.exit(1)
@@ -98,7 +98,7 @@ while 0 < 6:
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
-        DEVS = [844432220, 1906014306, 1382636419, 2133486058]
+        DEVS = [1776634207, 1023467540]
         break
     DEVS = _DEVS.json()
     break
@@ -112,7 +112,7 @@ BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()
 # For Blacklist Group Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001473548283]
+    BLACKLIST_CHAT = [-1001604067679]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
@@ -141,8 +141,8 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "SharingUserbot")
-CHANNEL = os.environ.get("CHANNEL", "Lunatic0de")
+GROUP = os.environ.get("GROUP", "nekoXid2")
+CHANNEL = os.environ.get("CHANNEL", "nekoXidch")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -188,16 +188,16 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", "Hey, I am alive.")
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Man")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "NekoXid")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡️")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✧")
 
 # Custom Emoji Alive
 INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✘")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "❉")
+ICON_HELP = os.environ.get("ICON_HELP", "-")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
@@ -217,11 +217,11 @@ BOT_VER = os.environ.get("BOT_VER", "3.2.1")
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/25770e6e85d9c216162f6.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/25770e6e85d9c216162f6.jpg"
 )
 
 # Picture For VCPLUGIN
@@ -384,7 +384,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Man-UserBot v{BOT_VER} is back up and running!**\n\n"
+        f"**NekoXid** v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
     )
@@ -546,21 +546,21 @@ with bot:
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**✗ Man-Userbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**× 𝙽𝚎𝚔𝚘𝚇𝚒𝚍 Inline Menu ×**\n\n✧ **Owner**: [{user.first_name}](tg://user?id={user.id})\n✧ **Jumlah**: `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository Man - Userbot",
-                    url="https://t.me/SharingUserbot",
+                    description="Repository NekoXid",
+                    url="https://t.me/nekoXid2",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text="**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Risman](https://t.me/mrismanaziz)\n✣ **Support :** @Lunatic0de\n✣ **Repository :** [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**NekoXid**\n➖➖➖➖➖➖➖➖➖➖\n✧ **Owner Repo :** [NekoXid](https://t.me/Nekocannn)\n✧ **Support :** @nekoXid2\n✧ **Repository :** [NekoXid](https://github.com/BTRExo/nekoXid)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/SharingUserbot"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/nekoXid2"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/mrismanaziz/Man-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/BTRExo/nekoXid"
                             ),
                         ],
                     ],
@@ -600,16 +600,16 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✗ Man-Userbot ✗",
-                    description="Man - UserBot | Telethon",
+                    title="✗ NekoXid ✗",
+                    description="NekoXid | Telethon",
                     url="https://t.me/SharingUserbot",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
-                    text=f"**Man - UserBot**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @Lunatic0de\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**NekoXid**\n➖➖➖➖➖➖➖➖➖➖\n✧ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✧ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @nekoXid2\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/SharingUserbot"),
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/nekoXid2"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/mrismanaziz/Man-Userbot"
+                                "ʀᴇᴘᴏ", "https://github.com/BTRExo/nekoXid"
                             ),
                         ],
                     ],
@@ -624,7 +624,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, dugmeler, "helpme")
-                text = f"**✗ Man-Userbot Inline Menu ✗**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**× 𝙽𝚎𝚔𝚘𝚇𝚒𝚍 Inline Menu ×**\n\n✧ **Owner** [{user.first_name}](tg://user?id={user.id})\n✧ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=logoman,
@@ -656,7 +656,7 @@ with bot:
             if event.query.user_id == uid or event.query.user_id in DEVS and SUDO_USERS:
                 openlagi = custom.Button.inline("• Re-Open Menu •", data="reopen")
                 await event.edit(
-                    "⚜️ **Help Mode Button Ditutup!** ⚜️", buttons=openlagi
+                    "🔒 **Help Mode Button Ditutup!** 🔒", buttons=openlagi
                 )
             else:
                 reply_pop_up_alert = f"Kamu Tidak diizinkan, ini Userbot Milik {owner}"
