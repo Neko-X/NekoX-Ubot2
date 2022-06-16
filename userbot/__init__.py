@@ -541,7 +541,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@SharingUserbot"):
+            if event.query.user_id == uid and query.startswith("@nekoXid2"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logoman,
@@ -602,7 +602,7 @@ with bot:
                 result = builder.article(
                     title="✗ NekoXid ✗",
                     description="NekoXid | Telethon",
-                    url="https://t.me/SharingUserbot",
+                    url="https://t.me/nekoXid2",
                     thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text=f"**NekoXid**\n➖➖➖➖➖➖➖➖➖➖\n✧ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✧ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @nekoXid2\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
