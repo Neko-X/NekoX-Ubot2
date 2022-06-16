@@ -194,10 +194,10 @@ ALIVE_NAME = os.environ.get("ALIVE_NAME", "NekoXid")
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✧")
 
 # Custom Emoji Alive
-INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✘")
+INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "-")
 
 # Custom icon HELP
-ICON_HELP = os.environ.get("ICON_HELP", "-")
+ICON_HELP = os.environ.get("ICON_HELP", "⭒")
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", "ID"))
