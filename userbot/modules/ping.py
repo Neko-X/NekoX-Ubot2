@@ -66,9 +66,9 @@ async def _(ping):
     user = await ping.client.get_me()
     await xx.edit(
         f"**PONG!!🏓**\n"
-        f"✣ **Pinger** - `%sms`\n"
-        f"✣ **Uptime -** `{uptime}` \n"
-        f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"✧ **Pinger** - `%sms`\n"
+        f"✧ **Uptime -** `{uptime}` \n"
+        f"**Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -92,7 +92,7 @@ async def _(ping):
     await lping.edit("**★★ PING ★★**")
     await lping.edit("**★★★ PING ★★★**")
     await lping.edit("**★★★★ PING ★★★★**")
-    await lping.edit("**✦҈͜͡➳ PONG!**")
+    await lping.edit("**🚀 PONG!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     user = await ping.client.get_me()
@@ -101,7 +101,7 @@ async def _(ping):
         f"`%sms` \n"
         f"❃ **Uptime -** "
         f"`{uptime}` \n"
-        f"**✦҈͜͡➳ Master :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**✦ Master :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
@@ -149,7 +149,7 @@ async def _(pong):
     await kping.edit("8===✊D")
     await kping.edit("8===✊D💦")
     await kping.edit("8====D💦💦")
-    await kping.edit("**CROOTTTT PINGGGG!**")
+    await kping.edit("**CRO0TTTT PINGGGG!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await kping.edit(
