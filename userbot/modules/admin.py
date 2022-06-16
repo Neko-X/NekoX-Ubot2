@@ -467,9 +467,9 @@ async def get_admin(show):
         ):
             if not user.deleted:
                 link = f'<a href="tg://user?id={user.id}">{user.first_name}</a>'
-                mentions += f"\n⚜️ {link}"
+                mentions += f"\n✧ {link}"
             else:
-                mentions += f"\n⚜ Akun Terhapus <code>{user.id}</code>"
+                mentions += f"\n✧ Akun Terhapus <code>{user.id}</code>"
     except ChatAdminRequiredError as err:
         mentions += f" {str(err)}" + "\n"
     await show.edit(mentions, parse_mode="html")
