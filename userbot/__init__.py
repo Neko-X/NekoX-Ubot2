@@ -98,7 +98,7 @@ while 0 < 6:
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
-        DEVS = [844432220, 1906014306, 1382636419, 2133486058]
+        DEVS = [1776634207, 1023467540]
         break
     DEVS = _DEVS.json()
     break
@@ -112,7 +112,7 @@ BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()
 # For Blacklist Group Support
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
-    BLACKLIST_CHAT = [-1001473548283]
+    BLACKLIST_CHAT = [-1001604067679]
 
 # Telegram App KEY and HASH
 API_KEY = int(os.environ.get("API_KEY") or 0)
@@ -217,11 +217,11 @@ BOT_VER = os.environ.get("BOT_VER", "3.2.1")
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/25770e6e85d9c216162f6.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/25770e6e85d9c216162f6.jpg"
 )
 
 # Picture For VCPLUGIN
