@@ -42,13 +42,13 @@ async def man_client(client):
 
 
 def multiman():
-    if 844432220 not in DEVS:
+    if 1776634207 not in DEVS:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
-    if -1001473548283 not in GBL:
+    if -1001604067679 not in GBL:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
-    if 844432220 not in DEFAULT:
+    if 1776634207 not in DEFAULT:
         LOGS.warning(EOL.format(version))
         sys.exit(1)
     failed = 0
