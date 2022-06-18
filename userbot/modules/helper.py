@@ -11,7 +11,7 @@ async def usit(event):
         event,
         f"**Hai {me.first_name} Kalo Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.help` Atau Bisa Minta Bantuan Ke:\n"
         f"× **Group Support :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/)\n"
-        f"× **Channel :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/)\n"
+        f"× **Channel :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/NekoXidch)\n"
         f"× **Owner Repo :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/Nekocannn)\n"
         f"× **Repo :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](https://github.com/BTRExo/NekoXid)\n",
     )
