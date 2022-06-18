@@ -13,7 +13,7 @@ async def usit(event):
         f"× **Group Support :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/)\n"
         f"× **Channel :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/)\n"
         f"× **Owner Repo :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](t.me/Nekocannn)\n"
-        f"× **Repo :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](https://github.com/BTRExo/NekoXid\n",
+        f"× **Repo :** [𝙽𝚎𝚔𝚘𝚇𝚒𝚍](https://github.com/BTRExo/NekoXid)\n",
     )
 
 
