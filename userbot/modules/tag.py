@@ -31,21 +31,21 @@ async def _(e):
         if isinstance(x, onn):
             o += 1
             if "on" in okk:
-                xx += f"\n» [{get_display_name(bb)}](tg://user?id={bb.id})"
+                xx += f"\n🔸 [{get_display_name(bb)}](tg://user?id={bb.id})"
         if isinstance(x, off):
             nn += 1
             if "off" in okk and not bb.bot and not bb.deleted:
-                xx += f"\n» [{get_display_name(bb)}](tg://user?id={bb.id})"
+                xx += f"\n🔸 [{get_display_name(bb)}](tg://user?id={bb.id})"
         if isinstance(x, rec):
             rece += 1
             if "rec" in okk and not bb.bot and not bb.deleted:
-                xx += f"\n» [{get_display_name(bb)}](tg://user?id={bb.id})"
+                xx += f"\n🔸 [{get_display_name(bb)}](tg://user?id={bb.id})"
         if isinstance(y, owner):
             xx += f"\n👑 [{get_display_name(bb)}](tg://user?id={bb.id})"
         if isinstance(y, admin) and "admin" in okk and not bb.deleted:
-            xx += f"\n» [{get_display_name(bb)}](tg://user?id={bb.id})"
+            xx += f"\n🔸 [{get_display_name(bb)}](tg://user?id={bb.id})"
         if "all" in okk and not bb.bot and not bb.deleted:
-            xx += f"\n» [{get_display_name(bb)}](tg://user?id={bb.id})"
+            xx += f"\n🔸 [{get_display_name(bb)}](tg://user?id={bb.id})"
         if "bot" in okk and bb.bot:
             xx += f"\n🤖 [{get_display_name(bb)}](tg://user?id={bb.id})"
     await e.client.send_message(e.chat_id, xx)
